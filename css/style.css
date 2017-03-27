@@ -144,6 +144,31 @@ height: auto;
   background-image: url("../img/four.jpg");
 
 }
+section:nth-of-type(7) .holder {
+margin-top: 50px
+}
+
+section:nth-of-type(7) .holder article{
+  width: 25%;
+  height: auto;
+  text-align: center;
+  float: left;
+}
+section:nth-of-type(7) .holder article img{
+  width: 100%;
+  height: auto;
+}
+
+section:nth-of-type(7) .holder article h2{
+  font-size: 35px;
+  color: blue;
+}
+
+section:nth-of-type(7) .holder article p{
+  font-size: 18px;
+  color: orange;
+}
+
 
 .breath{
   -webkit-animation: breathing 8s ease-out infinite normal;

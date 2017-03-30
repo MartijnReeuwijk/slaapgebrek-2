@@ -1,290 +1,372 @@
 @import url('https://www.fontify.me/wf/6e2b537eea0d91932e0f62900294f2df');
 
 body{
-font-family: font37282;
--webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadein 1s; /* Firefox < 16 */
+    font-family: font37282;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
     -ms-animation: fadein 1s; /* Internet Explorer */
-     -o-animation: fadein 1s; /* Opera < 12.1 */
-        animation: fadein 1s;
-
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
+
 @font-face {
     font-family: Quandranta;
     src: url("Quadranta-Bold.otf") format("opentype");
 }
 
-
+h2 {
+    font-family: Quandranta;
+    font-size: 50px;
+    color: #bbdff5;
+}
+p {
+    color: #858585;
+}
 
 section{
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 section:nth-of-type(1){
-  background-image: url("../img/background.jpg");
+    background-image: url("../img/background.jpg");
 }
+
 section:nth-of-type(2){
-  z-index: 10;
-  height: 100%;
-  min-height: 550px;
-  display: inline-block;
+    z-index: 10;
+    height: 100%;
+    min-height: 550px;
+    display: inline-block;
 }
+
 .holder{
-  width: 90%;
-  max-width: 1400px;
-  height: 100%;
-  position: relative;
-  margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
 }
 
 .logo {
-  width: 30%;
-  max-width: 500px;
-  height: auto;
+    width: 30%;
+    max-width: 500px;
+    height: auto;
 
-  background-image: url("../img/logo.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
 
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 5%;
 
-  -webkit-animation: breathing 8s ease-out infinite normal;
-  animation: breathing 8s ease-out infinite normal;
+    -webkit-animation: breathing 8s ease-out infinite normal;
+    animation: breathing 8s ease-out infinite normal;
 }
 
 .sleepcare {
-  width: 50%;
-  float: left;
-  color: #858585;
-  margin-top: 30px;
+    width: 50%;
+    float: left;
+    margin-top: 30px;
 }
 
 .sleepcare h1 {
-  font-size: 75px;
-  color: #bbdff5;
-  font-family: Quandranta;
+    font-size: 75px;
+    font-family: Quandranta;
+    color: #bbdff5;
 }
 
 .sleepcare p {
-  width: 250px;
-  margin: 30px 0px;
+    width: 250px;
+    margin: 30px 0px;
 }
 
 .sleepcare img {
-  width: 200px;
+    width: 200px;
 }
 
 .headholder {
-  height: 100%;
-  width: 50%;
-  position: relative;
-  float: left;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    float: left;
 }
 
 .headholder div:first-of-type{
-  width: 50px;
-  height: 50px;
-  background-image: url("../img/eco.png");
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-size: cover;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/eco.png");
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-size: cover;
 }
 
 .head1 , .head2{
-  width: 100%;
-  height: 250px;
-  float: left;
-  background-image: url("../img/head-1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+    width: 100%;
+    height: 250px;
+    float: left;
+    background-image: url("../img/head-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 
-  position: relative;
-  top: -50px;
+    position: relative;
+    top: -50px;
 
-  /*dit is beetje kut zo*/
-
+    /*dit is beetje kut zo*/
 }
+
 .head2 {
-  background-position: center;
-  height: 500px;
+    background-position: center;
+    height: 500px;
 
-  float: left;
-  background-image: url("../img/head-2.png");
-  position: absolute;
-  top: 20%;
-  bottom: 10%;
-
+    float: left;
+    background-image: url("../img/head-2.png");
+    position: absolute;
+    top: 20%;
+    bottom: 10%;
 }
+
 section:nth-of-type(3){
-  height:auto;
+    height:auto;
 }
+
 video{
-  width: 100%;
+    width: 100%;
 }
+
 .brabbel{
-  height: 100%;
+    height: 100%;
 }
+
 .brabbel iframe  {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .productimg{
-width: 100vw;
-height: auto;
+    width: 100vw;
+    height: auto;
     display: inline-block;
 }
+
 .productimg article{
-  width: 25%;
-  float: left;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/one.jpg");
+    width: 25%;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/one.jpg");
 }
 
 .productimg article:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
+
 .productimg article:nth-of-type(2){
-  background-image: url("../img/two.jpg");
-
+    background-image: url("../img/two.jpg");
 }
+
 .productimg article:nth-of-type(3){
-  background-image: url("../img/three.jpg");
-
+    background-image: url("../img/three.jpg");
 }
+
 .productimg article:nth-of-type(4){
-  background-image: url("../img/four.jpg");
+    background-image: url("../img/four.jpg");
+}
+
+section:nth-of-type(5) {
+    background-color:#f7f7f6 ;
+}
+
+section:nth-of-type(5) article {
+    width: 33.3%;
+    height: 50vh;
+    float: left;
+    margin-top: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+section:nth-of-type(5) article:nth-of-type(2){
+    background-image: url("../img/rondje.png");
 
 }
-section:nth-of-type(5) {
-    background-image: url("../img/rondding.png");
+section:nth-of-type(5) article:nth-of-type(4),
+section:nth-of-type(5) article:nth-of-type(6) {
+    background-image: url("../img/orbit.png");
+    background-position: top;
+
+    margin: 0;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 40000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 40000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 40000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(360deg);
 }
+section:nth-of-type(5) article:nth-of-type(6){
+    width: 10%;
+    background-image: url("../img/orbit2.png");
+    background-position: center;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 80000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 80000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 80000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+section:nth-of-type(5) article:nth-of-type(2),
+section:nth-of-type(5) article:nth-of-type(4) {
+    width: 33.4%;
+}
+
+.center{
+    width: 50%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.center h2 {
+    margin: 15px 0px;
+}
+.center p {
+    line-height: 20px;
+}
+
 section:nth-of-type(7) {
     height: 100%;
 }
+
 section:nth-of-type(7) .holder {
 
 }
 
 section:nth-of-type(7) .holder article{
-  width: calc(25% - 10px);
-  height: auto;
-  text-align: left;
-  margin: 50px 5px;
-  float: left;
+    width: calc(25% - 10px);
+    height: auto;
+    text-align: left;
+    margin: 50px 5px;
+    float: left;
 }
+
 section:nth-of-type(7) .holder article img{
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 section:nth-of-type(7) .holder article h2{
-  font-size: 50px;
-  color: #bbdff5;
-  font-family: Quandranta;
-  text-align: left;
-  margin: 5px 0;
+    text-align: left;
+    margin: 5px 0;
 }
 
 section:nth-of-type(7) .holder article p{
-  font-size: 18px;
-  line-height: 30px;
-  margin-top: 15px;
-  color: #858585;
-  width: 70%;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 15px;
+    width: 70%;
 }
 
 section:nth-of-type(8) {
-  position: relative;
-  overflow: hidden;
-  background-image: url("../img/background-2.png");
-  background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../img/background-2.png");
+    background-size: cover;
 }
+
 /* scroll overflow right */
 section:nth-of-type(8) h2 {
-    color: #bbdff5;
     font-size: 55px;
     margin: 30px auto;
     text-align: center;
-    font-family: Quandranta;
-
 }
-section:nth-of-type(8) article {
-  width: 400px;
-  height: 400px;
-  background-image: url("http://www.homease.nl/wp-content/uploads/slaapkamer-mother-goose-hotel-2.jpg");
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 3%;
-  right: 3%;
-  bottom: 3%;
-  left: 3%;
 
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+section:nth-of-type(8) article {
+    width: 400px;
+    height: 400px;
+    background-image: url("http://www.homease.nl/wp-content/uploads/slaapkamer-mother-goose-hotel-2.jpg");
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    bottom: 3%;
+    left: 3%;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 section:nth-of-type(8) article:nth-last-of-type(1) {
-  width: 300px;
-  height: 300px;
-  background-image: url("http://www.interieurdesigner.be/frontend/files/userfiles/images/inspiratie/slaapkamers/7-modern-tweepersoonsbed.jpg");
-  top: 20%;
-  right: 0%;
-  bottom: 0%;
-  left: 30%;
+    width: 300px;
+    height: 300px;
+    background-image: url("http://www.interieurdesigner.be/frontend/files/userfiles/images/inspiratie/slaapkamers/7-modern-tweepersoonsbed.jpg");
+    top: 20%;
+    right: 0%;
+    bottom: 0%;
+    left: 30%;
 }
 
 section:nth-of-type(8) article:nth-last-of-type(2) {
-  width: 200px;
-  height: 200px;
-  background-image: url("http://www.weyne.be/wp-content/uploads/2013/05/nol-col-santara-grijs.jpg");
-  top: 60%;
-  right: 0%;
-  bottom: 0%;
-  left: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url("http://www.weyne.be/wp-content/uploads/2013/05/nol-col-santara-grijs.jpg");
+    top: 60%;
+    right: 0%;
+    bottom: 0%;
+    left: 50%;
 }
 
 section:nth-of-type(8) article:nth-last-of-type(3) {
-  width: 500px;
-  height: 500px;
-  background-image: url("https://www.haco.nu/media/gallery/cache/7b8fef0172c2eb72dd8fd366c999954c/4/6/4612_am864_g003_penzberg_paco_sfeer.jpg");
-  top: 5%;
-  right: 0%;
-  bottom: 0%;
-  left: 60%;
+    width: 500px;
+    height: 500px;
+    background-image: url("https://www.haco.nu/media/gallery/cache/7b8fef0172c2eb72dd8fd366c999954c/4/6/4612_am864_g003_penzberg_paco_sfeer.jpg");
+    top: 5%;
+    right: 0%;
+    bottom: 0%;
+    left: 60%;
 }
 
 section:nth-of-type(8) article {
-overflow: hidden;
+    overflow: hidden;
 }
 
 section:nth-of-type(8) article div{
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.5);
 }
 
 footer{
-height: 130px;
-width: 100%;
+    height: 130px;
+    width: 100%;
 }
 
 footer div {
@@ -298,153 +380,167 @@ footer div {
     position: relative;
     z-index: -1;
 }
+
 .breath{
-  -webkit-animation: breathing 8s ease-out infinite normal;
-  animation: breathing 8s ease-out infinite normal;
+    -webkit-animation: breathing 8s ease-out infinite normal;
+    animation: breathing 8s ease-out infinite normal;
 }
 
 
 /*animation*/
 @-webkit-keyframes breathing {
-  0% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 
-  25% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
+    25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 
-  60% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
+    60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 
-  100% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
+    100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 }
 
 @keyframes breathing {
-  0% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 
-  25% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
+    25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 
-  60% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
+    60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 
-  100% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-  }
+    100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 }
 
 
 .floating, .floating2{
-  float: left;
-  -webkit-animation-name: Floatingx;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-name: Floating;
-  -moz-animation-duration: 3s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;a
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;a
 
 }
 .floating2{
-  -webkit-animation-duration: 4s;
-  -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
 
 @-webkit-keyframes Floatingx{
-  from {-webkit-transform:translate(0, 0px);}
-  65% {-webkit-transform:translate(0, 15px);}
-  to {-webkit-transform: translate(0, -0px);    }
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }
 }
 
 @-moz-keyframes Floating{
-  from {-moz-transform:translate(0, 0px);}
-  65% {-moz-transform:translate(0, 15px);}
-  to {-moz-transform: translate(0, -0px);}
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}
 }
 
 
 .scaling{
-  float: left;
-  -webkit-animation-name: scalex;
-  -webkit-animation-duration:3s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-timing-function:ease-in-out;
-  -moz-animation-name: scale;
-  -moz-animation-duration:3s;
-  -moz-animation-iteration-count:infinite;
-  -moz-animation-timing-function:ease-in-out;
+    float: left;
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
 }
 
 @-webkit-keyframes scalex{
-  from {-webkit-transform: scale(0.9);}
-  65% {-webkit-transform: scale(1.0);}
-  to {-webkit-transform: scale(0.9);}
+    from {-webkit-transform: scale(0.9);}
+    65% {-webkit-transform: scale(1.0);}
+    to {-webkit-transform: scale(0.9);}
 }
 
 @-moz-keyframes scale{
-  from {-moz-transform: scale(0.9);}
-  65% {-moz-transform: scale(1.0);}
-  to {-moz-transform: scale(0.9);}
+    from {-moz-transform: scale(0.9);}
+    65% {-moz-transform: scale(1.0);}
+    to {-moz-transform: scale(0.9);}
 }
 -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-     -o-animation: fadein 2s; /* Opera < 12.1 */
-        animation: fadein 2s;
+-moz-animation: fadein 2s; /* Firefox < 16 */
+-ms-animation: fadein 2s; /* Internet Explorer */
+-o-animation: fadein 2s; /* Opera < 12.1 */
+animation: fadein 2s;
 }
 
 @keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-from { opacity: 0; }
-to   { opacity: 1; }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

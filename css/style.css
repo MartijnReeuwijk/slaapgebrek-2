@@ -26,7 +26,15 @@ h2 {
 p {
     color: #858585;
 }
+.stepke{
+  width: 3px;
+  height: 100vh;
+  background-color: #bbdff5;
+  margin-left: 27px;
+  z-index: 5;
+  position: fixed;
 
+}
 section{
     width: 100vw;
     height: 100vh;
@@ -37,7 +45,8 @@ section{
 }
 
 section:nth-of-type(1){
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.png");
+    z-index: 10;
 }
 
 section:nth-of-type(2){
@@ -45,6 +54,16 @@ section:nth-of-type(2){
     height: 100%;
     min-height: 550px;
     display: inline-block;
+
+
+    background: rgba(187,223,245,0.2);
+    background: -moz-linear-gradient(rgba(187,223,245,0.2) 0%, rgba(187,223,245,0.2) 0%, rgba(255,255,255,0.11) 46%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient( color-stop(0%, rgba(187,223,245,0.2)), color-stop(0%, rgba(187,223,245,0.2)), color-stop(46%, rgba(255,255,255,0.11)), color-stop(100%, rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(rgba(187,223,245,0.2) 0%, rgba(187,223,245,0.2) 0%, rgba(255,255,255,0.11) 46%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(rgba(187,223,245,0.2) 0%, rgba(187,223,245,0.2) 0%, rgba(255,255,255,0.11) 46%, rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(rgba(187,223,245,0.2) 0%, rgba(187,223,245,0.2) 0%, rgba(255,255,255,0.11) 46%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(rgba(187,223,245,0.2) 0%, rgba(187,223,245,0.2) 0%, rgba(255,255,255,0.11) 46%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbdff5', endColorstr='#ffffff', GradientType=1 );
 }
 
 .holder{
@@ -78,22 +97,25 @@ section:nth-of-type(2){
 .sleepcare {
     width: 50%;
     float: left;
-    margin-top: 30px;
+    margin: 35px 0;
 }
 
 .sleepcare h1 {
     font-size: 75px;
     font-family: Quandranta;
     color: #bbdff5;
+    margin-top: 25px;
 }
 
 .sleepcare p {
     width: 250px;
     margin: 30px 0px;
+    line-height: 25px;
 }
 
 .sleepcare img {
     width: 200px;
+    opacity: .7;
 }
 
 .headholder {
@@ -111,6 +133,7 @@ section:nth-of-type(2){
     top: 5px;
     right: 5px;
     background-size: cover;
+
 }
 
 .head1 , .head2{
@@ -140,10 +163,17 @@ section:nth-of-type(2){
 
 section:nth-of-type(3){
     height:auto;
+    margin-top: 35px 0;
+
+}
+
+section:nth-of-type(3) .holder{
+  width: 70%;
 }
 
 video{
     width: 100%;
+
 }
 
 .brabbel{
@@ -166,7 +196,8 @@ video{
     float: left;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/one.jpg");
+    background-image: url("../img/one.png");
+    opacity: .8;
 }
 
 .productimg article:after {
@@ -176,22 +207,24 @@ video{
 }
 
 .productimg article:nth-of-type(2){
-    background-image: url("../img/two.jpg");
+    background-image: url("../img/two.png");
 }
 
 .productimg article:nth-of-type(3){
-    background-image: url("../img/three.jpg");
+    background-image: url("../img/three.png");
 }
 
 .productimg article:nth-of-type(4){
-    background-image: url("../img/four.jpg");
+    background-image: url("../img/four.png");
 }
 
-section:nth-of-type(5) {
+section:nth-of-type(4) {
     background-color:#f7f7f6 ;
+    /*padding: 0 0 30px 0;*/
+    margin-top: 35px;
 }
 
-section:nth-of-type(5) article {
+section:nth-of-type(4) article {
     width: 33.3%;
     height: 50vh;
     float: left;
@@ -200,12 +233,13 @@ section:nth-of-type(5) article {
     background-size: contain;
     background-repeat: no-repeat;
 }
-section:nth-of-type(5) article:nth-of-type(2){
+
+section:nth-of-type(4) article:nth-of-type(2){
     background-image: url("../img/rondje.png");
 
 }
-section:nth-of-type(5) article:nth-of-type(4),
-section:nth-of-type(5) article:nth-of-type(6) {
+section:nth-of-type(4) article:nth-of-type(4),
+section:nth-of-type(4) article:nth-of-type(6) {
     background-image: url("../img/orbit.png");
     background-position: top;
 
@@ -225,7 +259,7 @@ section:nth-of-type(5) article:nth-of-type(6) {
     -ms-animation-timing-function: linear;
     -o-transition: rotate(360deg);
 }
-section:nth-of-type(5) article:nth-of-type(6){
+section:nth-of-type(4) article:nth-of-type(6){
     width: 10%;
     background-image: url("../img/orbit2.png");
     background-position: center;
@@ -243,8 +277,8 @@ section:nth-of-type(5) article:nth-of-type(6){
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
 }
-section:nth-of-type(5) article:nth-of-type(2),
-section:nth-of-type(5) article:nth-of-type(4) {
+section:nth-of-type(4) article:nth-of-type(2),
+section:nth-of-type(4) article:nth-of-type(4) {
     width: 33.4%;
 }
 
@@ -252,18 +286,34 @@ section:nth-of-type(5) article:nth-of-type(4) {
     width: 50%;
     max-width: 600px;
     margin: 20px auto;
-}
-.center h2 {
-    margin: 15px 0px;
-}
-.center p {
-    line-height: 20px;
+
 }
 
+section:nth-of-type(4) article:nth-of-type(1) .center{
+  float: right;
+}
+section:nth-of-type(4) article:nth-of-type(3) .center{
+  float: left;
+}
+section:nth-of-type(4) article:nth-of-type(5) .center{
+  margin: -25px auto;
+
+}
+
+.center h2 {
+    margin: 20px 0px;
+
+}
+.center p {
+    line-height: 22px;
+}
+section:nth-of-type(5) {
+  margin-bottom: 75px
+
+}
 section:nth-of-type(7) {
     height: 100%;
 }
-
 section:nth-of-type(7) .holder {
 
 }
@@ -272,7 +322,7 @@ section:nth-of-type(7) .holder article{
     width: calc(25% - 10px);
     height: auto;
     text-align: left;
-    margin: 50px 5px;
+    margin: 75px 5px;
     float: left;
 }
 
@@ -310,7 +360,7 @@ section:nth-of-type(8) h2 {
 section:nth-of-type(8) article {
     width: 400px;
     height: 400px;
-    background-image: url("http://www.homease.nl/wp-content/uploads/slaapkamer-mother-goose-hotel-2.jpg");
+    background-image: url("../img/plaatje1.png");
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -327,7 +377,7 @@ section:nth-of-type(8) article {
 section:nth-of-type(8) article:nth-last-of-type(1) {
     width: 300px;
     height: 300px;
-    background-image: url("http://www.interieurdesigner.be/frontend/files/userfiles/images/inspiratie/slaapkamers/7-modern-tweepersoonsbed.jpg");
+    background-image: url("../img/plaatje2.png");
     top: 20%;
     right: 0%;
     bottom: 0%;
@@ -337,7 +387,7 @@ section:nth-of-type(8) article:nth-last-of-type(1) {
 section:nth-of-type(8) article:nth-last-of-type(2) {
     width: 200px;
     height: 200px;
-    background-image: url("http://www.weyne.be/wp-content/uploads/2013/05/nol-col-santara-grijs.jpg");
+    background-image: url("../img/plaatje3.png");
     top: 60%;
     right: 0%;
     bottom: 0%;
@@ -347,7 +397,7 @@ section:nth-of-type(8) article:nth-last-of-type(2) {
 section:nth-of-type(8) article:nth-last-of-type(3) {
     width: 500px;
     height: 500px;
-    background-image: url("https://www.haco.nu/media/gallery/cache/7b8fef0172c2eb72dd8fd366c999954c/4/6/4612_am864_g003_penzberg_paco_sfeer.jpg");
+    background-image: url("../img/plaatje4.png");
     top: 5%;
     right: 0%;
     bottom: 0%;
@@ -364,15 +414,15 @@ section:nth-of-type(8) article div{
     background-color: rgba(255, 0, 0, 0.5);
 }
 
-footer{
+.footer{
     height: 130px;
     width: 100%;
 }
 
-footer div {
+.footer div {
     width: 165px;
     height: 100%;
-    margin: 0px 0px 0px 10%;
+    margin: 0px 0px 0px 10px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../img/logo2.png");

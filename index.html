@@ -11,12 +11,22 @@
     <meta name="revisit-after" content="3 month" />
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="fav/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="fav/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="fav/manifest.json">
-    <!-- waarom geeft dit een error het is voor een icon. de kleur is daar gekozen -->
-    <!-- <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- font -->
@@ -32,14 +42,20 @@
     <script type="text/javascript" src="js/js.js"></script>
 </head>
 <body id="top">
+
+  <div class="stepke">
+
+  </div>
+
     <nav>
         <ul>
             <!-- omgekeerde order -->
-            <li><a href="#scro">Sociaal</a></li>
-            <li><a href="#brabbel">Het product</a></li>
-            <li><a href="#fase">Fase</a></li>
+            <li><a href="#social">Sociaal</a></li>
+            <li><a href="#fase">Interactie</a></li>
+            <li><a href="#brabbel">Brabbel</a></li>
             <li><a href="#interactie">Functie</a></li>
             <li><a href="#video">Video</a></li>
+            <li><a href="#app">Sleepcare</a></li>
             <li><a href="#top">Home</a></li>
 
         </ul>
@@ -51,11 +67,14 @@
         </div>
     </section>
 
-    <section>
+    <section id="app">
+
+
+
         <div class="holder">
 
 
-            <article class="sleepcare">
+            <article class="sleepcare" >
 
                 <h1>Praat samen met Brabbel over jouw dromen</h1>
                 <p>Brabbels werkt in samewerking met de Sleepcare App</p>
@@ -80,20 +99,10 @@
 
     <section>
         <div class="holder" id="video">
-            <video controls src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/uWfUjJf/futuristic-city-flight-with-monorail-train_vyscnm_wl__PM.mp4" poster="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/uWfUjJf/futuristic-city-flight-with-monorail-train_vyscnm_wl__M0000.jpg">
+            <video controls src="video/video.mp4" poster="img/poster.jpg">
 
             </video>
 
-        </div>  <!-- holder -->
-
-    </section>
-
-    <section>
-        <div class="holder">
-            <div class="brabbel" id="brabbel">
-                <iframe src="https://sketchfab.com/models/6c8b7a152ceb474d9dcaa7ebdff1d633/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-
-            </div>
         </div>  <!-- holder -->
 
     </section>
@@ -131,6 +140,16 @@
 
         </article>
     </div>  <!-- holder -->
+
+    </section>
+
+    <section>
+        <div class="holder">
+            <div class="brabbel" id="brabbel">
+                <iframe src="https://sketchfab.com/models/6c8b7a152ceb474d9dcaa7ebdff1d633/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+            </div>
+        </div>  <!-- holder -->
 
     </section>
 
@@ -180,9 +199,9 @@
         </div>
     </section>
 
-    <section>
+    <section id="social">
         <div class="holder">
-            <div class="scro" id="scro">
+            <div class="scro" >
                 <h2>#Brabbel</h2>
 
 
@@ -203,12 +222,14 @@
         </div>
     </section>
 
-    <footer>
+
+
+    <div class="footer">
         <div>
 
         </div>
 
-    </footer>
+    </div>
 
 
 </body>

@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
 
 @font-face {
     font-family: Quandranta;
-    src: url("Quadranta-Bold.otf") format("opentype");
+    src: url("Quadranta-Bold.ttf") format("truetype");
 }
 
 h2 {
@@ -27,13 +27,17 @@ p {
     color: #858585;
 }
 .stepke{
-  width: 3px;
-  height: 100vh;
-  background-color: #bbdff5;
-  margin-left: 27px;
-  z-index: 5;
-  position: fixed;
+    width: 3px;
+    height: 100vh;
+    background-color: #bbdff5;
+    margin-left: 27px;
+    z-index: 5;
+    position: fixed;
 
+}
+.datspaceboi {
+    width: 100%;
+    height: 75px;
 }
 section{
     width: 100vw;
@@ -75,7 +79,7 @@ section:nth-of-type(2){
 }
 
 .logo {
-    width: 30%;
+    width: 25%;
     max-width: 500px;
     height: auto;
 
@@ -161,23 +165,46 @@ section:nth-of-type(2){
     bottom: 10%;
 }
 
-section:nth-of-type(3){
+.video{
     height:auto;
     margin-top: 35px 0;
 
 }
 
-section:nth-of-type(3) .holder{
-  width: 70%;
+.video .holder{
+    width: 70%;
 }
 
 video{
     width: 100%;
-
 }
 
+.playpause {
+    background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+    background-repeat:no-repeat;
+    width:50%;
+    height:50%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+    animation: spintowinreverse .5s forwards;
+
+}
+.active {
+    animation: spintowin .5s forwards;
+}
+.deactive {
+    animation: spintowinreverse .5s forwards;
+}
 .brabbel{
     height: 100%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .brabbel iframe  {
@@ -192,39 +219,44 @@ video{
 }
 
 .productimg article{
-    width: 25%;
+    width: 100%;
+
     float: left;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/one.png");
+    /*background-image: url("../img/productimg.png");*/
     opacity: .8;
 }
-
-.productimg article:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
+.productimg article img{
+    width: 100%;
+    height: auto;
 }
 
-.productimg article:nth-of-type(2){
-    background-image: url("../img/two.png");
+/*.productimg article:after {
+content: "";
+display: block;
+padding-bottom: 100%;
+}*/
+
+/*.productimg article:nth-of-type(2){
+background-image: url("../img/two.png");
 }
 
 .productimg article:nth-of-type(3){
-    background-image: url("../img/three.png");
+background-image: url("../img/three.png");
 }
 
 .productimg article:nth-of-type(4){
-    background-image: url("../img/four.png");
-}
+background-image: url("../img/four.png");
+}*/
 
-section:nth-of-type(4) {
+.werking {
     background-color:#f7f7f6 ;
     /*padding: 0 0 30px 0;*/
     margin-top: 35px;
 }
 
-section:nth-of-type(4) article {
+.werking article {
     width: 33.3%;
     height: 50vh;
     float: left;
@@ -234,12 +266,12 @@ section:nth-of-type(4) article {
     background-repeat: no-repeat;
 }
 
-section:nth-of-type(4) article:nth-of-type(2){
+.werking article:nth-of-type(2){
     background-image: url("../img/rondje.png");
 
 }
-section:nth-of-type(4) article:nth-of-type(4),
-section:nth-of-type(4) article:nth-of-type(6) {
+.werking article:nth-of-type(4),
+.werking article:nth-of-type(6) {
     background-image: url("../img/orbit.png");
     background-position: top;
 
@@ -259,7 +291,7 @@ section:nth-of-type(4) article:nth-of-type(6) {
     -ms-animation-timing-function: linear;
     -o-transition: rotate(360deg);
 }
-section:nth-of-type(4) article:nth-of-type(6){
+.werking article:nth-of-type(6){
     width: 10%;
     background-image: url("../img/orbit2.png");
     background-position: center;
@@ -277,8 +309,8 @@ section:nth-of-type(4) article:nth-of-type(6){
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
 }
-section:nth-of-type(4) article:nth-of-type(2),
-section:nth-of-type(4) article:nth-of-type(4) {
+.werking article:nth-of-type(2),
+.werking article:nth-of-type(4) {
     width: 33.4%;
 }
 
@@ -289,14 +321,14 @@ section:nth-of-type(4) article:nth-of-type(4) {
 
 }
 
-section:nth-of-type(4) article:nth-of-type(1) .center{
-  float: right;
+.werking article:nth-of-type(1) .center{
+    float: right;
 }
-section:nth-of-type(4) article:nth-of-type(3) .center{
-  float: left;
+.werking article:nth-of-type(3) .center{
+    float: left;
 }
-section:nth-of-type(4) article:nth-of-type(5) .center{
-  margin: -25px auto;
+.werking article:nth-of-type(5) .center{
+    margin: -25px auto;
 
 }
 
@@ -307,18 +339,19 @@ section:nth-of-type(4) article:nth-of-type(5) .center{
 .center p {
     line-height: 22px;
 }
-section:nth-of-type(5) {
-  margin-bottom: 75px
+.brabbelholder {
+    margin-bottom: 75px
 
 }
-section:nth-of-type(7) {
-    height: 100%;
+section.tekening {
+    background-color: #f7f7f6;
+    height: 75vh;
 }
-section:nth-of-type(7) .holder {
+.tekening .holder {
 
 }
 
-section:nth-of-type(7) .holder article{
+.tekening .holder article{
     width: calc(25% - 10px);
     height: auto;
     text-align: left;
@@ -326,17 +359,17 @@ section:nth-of-type(7) .holder article{
     float: left;
 }
 
-section:nth-of-type(7) .holder article img{
+.tekening .holder article img{
     width: 100%;
     height: auto;
 }
 
-section:nth-of-type(7) .holder article h2{
+.tekening .holder article h2{
     text-align: left;
     margin: 5px 0;
 }
 
-section:nth-of-type(7) .holder article p{
+.tekening .holder article p{
     font-size: 18px;
     line-height: 30px;
     margin-top: 15px;
@@ -593,4 +626,15 @@ animation: fadein 2s;
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@keyframes spintowin {
+    from { transform: scale(1,1) rotate(0deg); }
+    to { transform: scale(0,0) rotate(360deg); }
+
+}
+@keyframes spintowinreverse {
+    from { transform: scale(0,0) rotate(360deg); }
+    to { transform: scale(1,1) rotate(0deg); }
+
 }

@@ -180,10 +180,10 @@ video{
 }
 
 .playpause {
-    background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+    background-image:url("../img/play.png");
     background-repeat:no-repeat;
-    width:50%;
-    height:50%;
+    width:30%;
+    height:30%;
     position:absolute;
     left:0%;
     right:0%;
@@ -193,8 +193,8 @@ video{
     background-size:contain;
     background-position: center;
     animation: spintowinreverse .5s forwards;
-
 }
+
 .active {
     animation: spintowin .5s forwards;
 }
@@ -418,24 +418,16 @@ section:nth-of-type(8) article:nth-last-of-type(1) {
 }
 
 section:nth-of-type(8) article:nth-last-of-type(2) {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     background-image: url("../img/plaatje3.png");
-    top: 60%;
-    right: 0%;
-    bottom: 0%;
-    left: 50%;
-}
-
-section:nth-of-type(8) article:nth-last-of-type(3) {
-    width: 500px;
-    height: 500px;
-    background-image: url("../img/plaatje4.png");
     top: 5%;
     right: 0%;
     bottom: 0%;
     left: 60%;
 }
+
+
 
 section:nth-of-type(8) article {
     overflow: hidden;

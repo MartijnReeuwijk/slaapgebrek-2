@@ -252,7 +252,7 @@ background-image: url("../img/four.png");
 
 .werking {
     background-color:#f7f7f6 ;
-    /*padding: 0 0 30px 0;*/
+    padding: 0 0 30px 0;
     margin-top: 35px;
 }
 
@@ -345,7 +345,7 @@ background-image: url("../img/four.png");
 }
 section.tekening {
     background-color: #f7f7f6;
-    height: 75vh;
+  height: 100vh;
 }
 .tekening .holder {
 
